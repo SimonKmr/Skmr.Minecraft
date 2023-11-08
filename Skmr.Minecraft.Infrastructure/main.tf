@@ -20,6 +20,11 @@ resource "aws_instance" "server"{
       instance_type = "t2.micro"
 }
 
+# https://www.youtube.com/watch?v=bybQxpM0kSQ
+resource "aws_apigatewayv2_api" "main"{
+
+}
+
 resource "aws_lambda_function" "start"{
     filename = ""
     function_name = "minecraft.start"

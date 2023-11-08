@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Skmr.Minecraft.Client.Pinge
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Skmr.Minecraft.Server.Starter", "Skmr.Minecraft.Server.Starter\Skmr.Minecraft.Server.Starter.csproj", "{34D67A42-F091-48A7-8A4B-FDE6FE8CB3D2}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Skmr.Minecraft.Server.Stopper", "Skmr.Minecraft.Server.Stoper\Skmr.Minecraft.Server.Stopper.csproj", "{5E9D750E-D11F-470C-A460-9A61877118FC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{34D67A42-F091-48A7-8A4B-FDE6FE8CB3D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{34D67A42-F091-48A7-8A4B-FDE6FE8CB3D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{34D67A42-F091-48A7-8A4B-FDE6FE8CB3D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E9D750E-D11F-470C-A460-9A61877118FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E9D750E-D11F-470C-A460-9A61877118FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E9D750E-D11F-470C-A460-9A61877118FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E9D750E-D11F-470C-A460-9A61877118FC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

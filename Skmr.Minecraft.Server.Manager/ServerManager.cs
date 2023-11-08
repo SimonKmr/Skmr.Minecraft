@@ -40,6 +40,14 @@ namespace Skmr.Minecraft.Server.Manager
             UptimeManager.Instance.ShuttingDown += Server_ShuttingDown;
         }
 
+        internal int GetPlayersOnline()
+        {
+            WriteToConsole("list");
+            UpdateConsoleLog();
+            Console.WriteLine(ConsoleLog);
+            return 0;
+        }
+
         private void Server_ShuttingDown(object? sender, EventArgs e)
         {
             WriteToConsole("stop");

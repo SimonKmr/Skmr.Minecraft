@@ -31,6 +31,9 @@ namespace Skmr.Minecraft.Server.Manager
             Thread.Sleep(1000);
             while (true)
             {
+                if (0 < ServerManager.Instance.GetPlayersOnline())
+                    Ping();
+
                 var delta = DateTime.Now - LastPing;
 
                 if(delta > Threshold)

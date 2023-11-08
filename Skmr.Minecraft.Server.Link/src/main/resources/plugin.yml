@@ -1,0 +1,4 @@
+name: Skmr.Minecraft.Server.Link
+version: '${project.version}'
+main: com.skmr.skmrlink.SkmrLink
+api-version: '1.20'

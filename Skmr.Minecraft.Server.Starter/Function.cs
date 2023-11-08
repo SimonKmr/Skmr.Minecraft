@@ -1,6 +1,9 @@
 using Amazon.EC2;
 using Amazon.EC2.Model;
+using Amazon.Lambda.APIGatewayEvents;
 using Amazon.Lambda.Core;
+using System.Net;
+using System.Text.Json;
 
 // Assembly attribute to enable the Lambda function's JSON input to be converted into a .NET class.
 [assembly: LambdaSerializer(typeof(Amazon.Lambda.Serialization.SystemTextJson.DefaultLambdaJsonSerializer))]
@@ -16,21 +19,53 @@ public class Function
     /// <param name="input"></param>
     /// <param name="context"></param>
     /// <returns></returns>
-    public async Task<List<string>> FunctionHandler(ILambdaContext context)
+    public async Task<APIGatewayProxyResponse> FunctionHandler(ILambdaContext context)
     {
-
-        AmazonEC2Client ec2Client = new AmazonEC2Client();
-        RunInstancesRequest requestLaunch = new RunInstancesRequest();
-
-        var instanceIds = new List<string>();
-
-        RunInstancesResponse responseLaunch = await ec2Client.RunInstancesAsync(requestLaunch);
-
-        foreach( Instance item in responseLaunch.Reservation.Instances)
+        try
         {
-            instanceIds.Add(item.InstanceId);
+            string instanceId = Environment.GetEnvironmentVariable("INSTANCE_ID");
+            var instances = new List<string>() { instanceId };
+            AmazonEC2Client ec2Client = new AmazonEC2Client();
+
+            //Get Status of instance
+            DescribeInstanceStatusRequest requestDescribeInstanceStatus = new DescribeInstanceStatusRequest()
+            {
+                InstanceIds = instances
+            };
+            DescribeInstanceStatusResponse responseDescribe = await ec2Client.DescribeInstanceStatusAsync(requestDescribeInstanceStatus);
+
+            var InstanceState = responseDescribe.InstanceStatuses.First().InstanceState;
+
+            //if instance is stoped
+            if (InstanceState.Code == 80)
+            {
+                //Start instance
+                StartInstancesRequest requestStart = new StartInstancesRequest(instances);
+                StartInstancesResponse responseStart = await ec2Client.StartInstancesAsync(requestStart);
+
+                //return state of instance
+                return new APIGatewayProxyResponse
+                {
+                    StatusCode = (int)HttpStatusCode.OK,
+                    Body = JsonSerializer.Serialize("started")
+                };
+            }
+
+            //else
+            //return state of instance
+            return new APIGatewayProxyResponse
+            {
+                StatusCode = (int)HttpStatusCode.OK,
+                Body = JsonSerializer.Serialize(InstanceState)
+            };
+        } catch (Exception e)
+        {
+            return new APIGatewayProxyResponse
+            {
+                StatusCode = (int)HttpStatusCode.OK,
+                Body = JsonSerializer.Serialize(e)
+            };
         }
 
-        return instanceIds;
     }
 }

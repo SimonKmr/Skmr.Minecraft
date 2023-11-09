@@ -1,5 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Skmr.Minecraft.Server.Manager.Models;
+using System.Diagnostics;
+using System.Runtime.InteropServices;
 
 namespace Skmr.Minecraft.Server.Manager.Controllers
 {
@@ -13,23 +15,14 @@ namespace Skmr.Minecraft.Server.Manager.Controllers
             _logger = logger;
         }
 
-        [HttpPost]
-        public void Add()
+        [HttpDelete]
+        public void Delete()
         {
-            UptimeManager.Instance.Ping();
-        }
-
-        [HttpGet]
-        public Uptime Get()
-        {
-            var m = UptimeManager.Instance;
-            return new Uptime()
+            if (RuntimeInformation.IsOSPlatform(OSPlatform.Linux))
             {
-                LastPing = m.LastPing,
-                Started = m.Started,
-                Threshold = m.Threshold
-            };
-            
+                Process.Start("/bin/bash", "shutdown -h now");
+            }
+            Console.WriteLine("Delete Executed...");
         }
     }
 }

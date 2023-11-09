@@ -4,11 +4,30 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5e418a92-01d2-4a7c-a347-7d1cbf6c653d" name="Changes" comment="" />
+    <list default="true" id="5e418a92-01d2-4a7c-a347-7d1cbf6c653d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/skmr/skmrlink/SkmrLink.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/skmr/skmrlink/SkmrLink.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Skmr.Minecraft.Server.Manager/Controllers/UptimeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Skmr.Minecraft.Server.Manager/Controllers/UptimeController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Skmr.Minecraft.Server.Manager/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Skmr.Minecraft.Server.Manager/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Skmr.Minecraft.Server.Manager/ServerManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Skmr.Minecraft.Server.Manager/ServerManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Skmr.Minecraft.Server.Manager/UptimeManager.cs" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -24,7 +43,9 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
   }
 }]]></component>
   <component name="RunManager">

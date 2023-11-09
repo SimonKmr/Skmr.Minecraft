@@ -24,7 +24,6 @@ app.UseAuthorization();
 
 app.MapControllers();
 
-UptimeManager.Init();
 ServerManager.Init();
 
 app.Run();

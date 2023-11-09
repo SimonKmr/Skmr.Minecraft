@@ -37,7 +37,6 @@ namespace Skmr.Minecraft.Server.Manager
             _consoleThread = new Thread(UpdateConsoleLog);
             _consoleThread.Start();
 
-            UptimeManager.Instance.ShuttingDown += Server_ShuttingDown;
         }
 
         internal int GetPlayersOnline()

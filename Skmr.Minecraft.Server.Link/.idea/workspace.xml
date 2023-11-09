@@ -5,26 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5e418a92-01d2-4a7c-a347-7d1cbf6c653d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_websocket_javax_websocket_api_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_client5_httpclient5_5_3_alpha1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_core5_httpcore5_5_2_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_core5_httpcore5_h2_5_2_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_36.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test/src/main/java/org/example/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../testMaven/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../testMaven/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../testMaven/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/skmr/skmrlink/Tasks/ShutDownMonitor.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../testMaven/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../testMaven/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../testMaven/src/main/java/org/example/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_spigotmc_spigot_api_1_20_2_R0_1_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_spigotmc_spigot_api_1_20_2_R0_1_SNAPSHOT.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Skmr.Minecraft.Server.Link.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Skmr.Minecraft.Server.Link.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/skmr/skmrlink/SkmrLink.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/skmr/skmrlink/SkmrLink.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

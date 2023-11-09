@@ -14,6 +14,7 @@ su
 
 
 # installs server manager
+# needs enough permissions to shut the pc down
 
 
 # sets variables
